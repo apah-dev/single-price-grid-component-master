@@ -46,20 +46,33 @@ Users should be able to:
 
 Learnt how to use grid to create layouts
 Learnt how to span grid columns and rows to fit the layout of the design
-Learnt how to use the background-image position and background-repeat
+Learnt how to use more than one media query to target different sizes of the screen
 
 To make a blur underneath the box-shadow you have to give a spread value equal but negative to the blur value
 
 ````css
-      @media (max-width: 768px) {
+        @media (max-width: 768px) {
         .container {
           display: grid;
           grid-template-columns: 1fr;
+          width: 80%;
         }
-
         .first {
           grid-column: 1/1;
         }
+      }
+
+      @media (max-width: 1300px) {
+        .container {
+          display: grid;
+          grid-template-columns: 1fr;
+          width: 50%;
+        }
+        .first {
+          grid-column: 1/2;
+        }
+      }
+
 
      box-shadow: 0 20px 20px -20px #333;
 ```
