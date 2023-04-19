@@ -48,18 +48,25 @@ Learnt how to use grid to create layouts
 Learnt how to span grid columns and rows to fit the layout of the design
 Learnt how to use the background-image position and background-repeat
 
-```css
-background-color: var(--violet);
-background-image: url("./images/bg-pattern-quotation.svg");
-background-repeat: no-repeat;
-background-position: top 10px right 100px;
+To make a blur underneath the box-shadow you have to give a spread value equal but negative to the blur value
+
+````css
+      @media (max-width: 768px) {
+        .container {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        .first {
+          grid-column: 1/1;
+        }
+
+     box-shadow: 0 20px 20px -20px #333;
 ```
 
-### Continued development
-
-I intend to understand how to deal with spaces in the body of my page when i want to eliminate such spaces for mobile view to prevent scrolling
 
 ## Author
 
 - Frontend Mentor - [@apah-dev](https://www.frontendmentor.io/profile/apah-dev)
 - Twitter - [@benson_apah](https://www.twitter.com/benson_apah)
+````

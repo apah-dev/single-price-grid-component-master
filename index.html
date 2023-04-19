@@ -32,6 +32,10 @@
       body {
         font-family: "Karla", sans-serif;
         background-color: var(--LightGray);
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
       }
       .container {
         display: grid;
@@ -96,13 +100,15 @@
         margin-top: 40px;
         padding-left: 50px;
         padding-right: 50px;
-        height: 40px;
+        height: 45px;
         background-color: var(--Yellow);
         color: white;
         border-style: none;
-        box-shadow: 1px 1px 5px #333;
+        box-shadow: 0 20px 20px -20px #333;
+        /* box-shadow: 0px 1px 5px #333; */
         text-align: center;
         border-radius: 5px;
+        width: 100%;
         font-size: 16px;
         font-family: "Karla", sans-serif;
         font-weight: 700;
@@ -119,8 +125,8 @@
         .container {
           display: grid;
           grid-template-columns: 1fr;
+          width: 80%;
         }
-
         .first {
           grid-column: 1/1;
         }
