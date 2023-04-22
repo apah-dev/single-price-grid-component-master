@@ -107,7 +107,7 @@ button {
   .container {
     display: grid;
     grid-template-columns: 1fr;
-    width: 80%;
+    width: 100%;
   }
   .first {
     grid-column: 1/1;
@@ -119,7 +119,7 @@ button {
   .container {
     display: grid;
     grid-template-columns: 1fr;
-    width: 50%;
+    width: 100%;
   }
   .first {
     grid-column: 1/2;
